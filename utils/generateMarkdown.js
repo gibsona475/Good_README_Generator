@@ -21,6 +21,10 @@ function generateMarkdown(data) {
 
  
  Find me on Github at: https://github.com/${data.githubUserId}
+
+ Email me at: ${data.email}
+
+ My license is: ${data.license}
 `;
 }
 

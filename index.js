@@ -3,6 +3,7 @@
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
+const { type } = require("os");
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -19,7 +20,22 @@ const questions = [
         name: "githubUserId",
         input: "type",
         message: "Enter your GitHub Id"
-    }
+    },
+    {
+        name: "email",
+        input: "type",
+        message: "Enter your email",
+    
+    },
+
+    {
+        name: "license",
+        type: "list",
+        message: "select your prefered license",
+        choices: ['MIT', 'GNU', 'ISC','Apache'],
+    },
+
+    
 ];
 
 // TODO: Create a function to write README file
@@ -36,7 +52,7 @@ function init() {
     console.log("Starting the program ........"); 
     inquirer.prompt(questions)
     .then(response => {
-        // console.log("user answers", response); 
+         console.log("user answers", response); 
         //convert int oa redme friendly format 
         // console.log(generateMarkdown(response));
         writeToFile("readme.md", generateMarkdown(response));
