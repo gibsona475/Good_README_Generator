@@ -1,3 +1,8 @@
+# GOOD REAME GENERATOR 
+
+Please find my readme under the name **![Readme.md](../SampleReadME.md)**
+---------------------------
+
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -14,5 +19,6 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
+-------------------
 
 ![](images/Readme%20Image.png)

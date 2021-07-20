@@ -8,26 +8,49 @@ const { type } = require("os");
 const questions = [
     {
         name: "title",
-        input: "type",
+        type: "input",
         message: "Please enter the Project Title"
     },
     {
         name: "description",
-        input: "type",
+        type: "input",
         message: "Please enter the description for your Project"
     },
     {
         name: "githubUserId",
-        input: "type",
+        type: "input",
         message: "Enter your GitHub Id"
     },
     {
         name: "email",
-        input: "type",
+        type: "input",
         message: "Enter your email",
     
     },
-
+    {
+        name: "usage",
+        type: "input",
+        message: "Enter the usage for your project",
+    
+    },
+    {
+        name: "contributing",
+        type: "input",
+        message: "Enter your contributions",
+    
+    },
+    {
+        name: "Test",
+        type: "input",
+        message: "Enter your command to run test cases",
+    
+    },
+    {
+        name: "installation",
+        type: "input",
+        message: "Please enter the commannd to install dependencies for the project",
+        default: "npm install"
+    },
     {
         name: "license",
         type: "list",
@@ -55,7 +78,7 @@ function init() {
          console.log("user answers", response); 
         //convert int oa redme friendly format 
         // console.log(generateMarkdown(response));
-        writeToFile("readme.md", generateMarkdown(response));
+        writeToFile("SampleReadME.md", generateMarkdown(response));
     })
  }
 
