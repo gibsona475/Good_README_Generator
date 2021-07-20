@@ -1,6 +1,6 @@
 # GOOD REAME GENERATOR 
 
-Please find my readme under the name **![Readme.md](../SampleReadME.md)**
+Please find my readme under the name **![Readme.md](https://github.com/gibsona475/Good_README_Generator/blob/main/SampleReadME.md)**
 ---------------------------
 
 GIVEN a command-line application that accepts user input
